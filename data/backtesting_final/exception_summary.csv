@@ -1,6 +1,0 @@
-Model,Total Observations,Exceptions,Exception Rate (%)
-Historical,1952,16,0.82
-VCV,1952,29,1.486
-GARCH,1952,31,1.588
-Monte Carlo,1952,33,1.691
-EWMA,1952,37,1.895

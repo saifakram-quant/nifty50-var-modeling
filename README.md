@@ -58,13 +58,31 @@ The results indicate that risk estimation is highly sensitive to distributional 
 ```
 nifty50-var-modeling/
 │
-├── data/ # raw and processed data
-├── notebooks/ # exploratory analysis and model development
-├── src/ # model implementations and backtesting modules
-├── results/ # figures, tables, and outputs
+├── data/                      # raw and processed NIFTY 50 datasets
+│   ├── raw/
+│   └── processed/
+│
+├── notebooks/                # end-to-end modeling and backtesting workflows (Jupyter notebooks)
+│
+├── results/                  # generated outputs (visualizations, tables, and model results)
+│   ├── EDA/                  # exploratory data analysis outputs (plots and summary statistics)
+│   ├── 1_Variance_Covariance_Method/
+│   ├── 2_EWMA_Method/
+│   ├── 3_GARCH_Method/
+│   ├── 4_Historical_Method/
+│   └── 5_MonteCarlo_Method/
+│
+├── backtesting_final/        # exception analysis, statistical tests, and validation outputs
+│
 ├── README.md
-└── requirements.txt
+├── requirements.txt
+└── .gitignore
 ```
+
+### Note on Folder Naming
+The folder naming convention reflects the original modeling workflow used in the Python implementation and has been retained to ensure consistency with the code and generated outputs.
+
+The EDA folder contains only derived outputs (plots and summaries), while all exploratory logic is implemented within the notebooks.
 
 ## Technology Stack
 - Python  

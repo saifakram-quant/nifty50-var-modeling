@@ -1,27 +1,27 @@
 # NIFTY 50 Value-at-Risk (VaR) Modeling and Backtesting
 
 ## Overview
-This repository develops an empirical market risk framework for the NIFTY 50 through Value-at-Risk (VaR) estimation and backtesting on daily log returns. The study evaluates the calibration and reliability of alternative VaR methodologies under non-normal return distributions, volatility clustering, and rolling out-of-sample forecasting.
+This repository implements and evaluates Value-at-Risk (VaR) models for the NIFTY 50 using daily logarithmic returns. The analysis examines model performance under non-normal return distributions, volatility clustering, and a rolling out-of-sample forecasting framework.
 
 ## Research Objective
-To estimate and compare one-day 99% VaR for the NIFTY 50 using multiple established methodologies, assess their statistical validity under real market conditions, and identify which framework most accurately captures downside risk in the Indian equity market.
+To estimate and compare one-day 99% VaR for the NIFTY 50 using multiple established methodologies, evaluate their statistical calibration under real market conditions, and identify the models that most accurately capture downside risk in the Indian equity market.
 
 ## Data
 - **Asset:** NIFTY 50 Index  
 - **Market:** Indian large-cap equities  
 - **Frequency:** Daily  
 - **Sample Period:** 2014–2023  
-- **Input Series:** Daily closing prices  
-- **Transformation:** Logarithmic returns  
+- **Source Variable:** Closing prices  
+- **Return Definition:** Logarithmic returns  
 
-## Methodological Framework
-- **Risk Measure:** One-day Value-at-Risk (VaR)  
+## Methodology
+- **Risk Metric:** One-day Value-at-Risk (VaR)  
 - **Confidence Level:** 99%  
 - **Estimation Window:** 500 trading days  
-- **Forecast Design:** Rolling one-step-ahead forecasting  
-- **Evaluation Horizon:** Out-of-sample backtesting  
+- **Forecasting Scheme:** Rolling one-step-ahead  
+- **Evaluation:** Out-of-sample backtesting  
 
-## Models Implemented
+## Models
 1. **Variance–Covariance (Parametric VaR)**  
 2. **Exponentially Weighted Moving Average (EWMA)**  
 3. **GARCH(1,1)**  
@@ -29,39 +29,39 @@ To estimate and compare one-day 99% VaR for the NIFTY 50 using multiple establis
 5. **Monte Carlo Simulation**  
 
 ## Empirical Analysis
-- Data cleaning and return construction  
+- Data cleaning and logarithmic return construction  
 - Exploratory analysis of return dynamics  
-- Descriptive statistics  
+- Descriptive statistical analysis  
 - Skewness and kurtosis diagnostics  
-- Formal normality testing  
+- D’Agostino–Pearson normality testing  
 - Model-specific VaR estimation  
-- Rolling out-of-sample forecasting  
-- Comparative backtesting and calibration assessment  
+- Rolling-window one-step-ahead VaR forecasting  
+- Comparative backtesting and calibration evaluation  
 
 ## Backtesting and Statistical Validation
-- **Exception (breach) analysis**  
+- **Exception analysis**  
 - **Kupiec Proportion of Failures (POF) test**  
 - **Binomial Z-test**  
 
-A model is considered well-calibrated when the observed exception frequency is consistent with the theoretical 1% benchmark and statistical tests fail to reject the model.
+A model is considered statistically well-calibrated if the observed exception frequency is consistent with the theoretical 1% VaR level and the null hypothesis of correct coverage is not rejected by the applied statistical tests.
 
 ## Principal Findings
-- Return distributions exhibit negative skewness and excess kurtosis  
-- Financial returns display fat tails and volatility clustering  
-- Normality-based parametric VaR models systematically underestimate tail risk  
-- Historical Simulation demonstrates superior empirical calibration under fat-tailed conditions  
+- NIFTY 50 daily logarithmic returns exhibit negative skewness and excess kurtosis  
+- The return distribution is non-normal, characterized by fat tails and volatility clustering  
+- Parametric VaR models based on normality assumptions underestimate downside tail risk  
+- Historical Simulation demonstrates the most consistent empirical calibration among the models evaluated  
 
 ## Interpretation
-Distributional realism dominates analytical convenience in market risk measurement. Under asymmetric, heavy-tailed, and heteroskedastic return dynamics, empirically grounded approaches provide more reliable VaR estimates than Gaussian-based parametric models.
+The results indicate that accurate risk estimation is critically dependent on distributional specification. Under non-normal, fat-tailed, and heteroskedastic return dynamics, empirically driven approaches provide more reliable VaR estimates than Gaussian-based parametric models.
 
 ## Repository Structure
 ```
 nifty50-var-modeling/
 │
-├── data/          # raw and processed datasets
-├── notebooks/     # exploratory analysis, model development, validation
-├── src/           # model implementations and backtesting logic
-├── results/       # figures, tables, outputs
+├── data/ # raw and processed data
+├── notebooks/ # exploratory analysis and model development
+├── src/ # model implementations and backtesting modules
+├── results/ # figures, tables, and outputs
 ├── README.md
 └── requirements.txt
 ```
@@ -83,6 +83,8 @@ nifty50-var-modeling/
 - Rolling-window model comparison  
 
 ## Potential Extensions
+The following extensions are prospective and are not implemented in the current study.
+
 - Student-t and skewed distribution modeling  
 - Expected Shortfall (CVaR)  
 - Christoffersen conditional coverage testing  

@@ -54,13 +54,13 @@ A model is considered well-calibrated when the observed exception frequency is c
 ## Interpretation
 Distributional realism dominates analytical convenience in market risk measurement. Under asymmetric, heavy-tailed, and heteroskedastic return dynamics, empirically grounded approaches provide more reliable VaR estimates than Gaussian-based parametric models.
 
-## Repository Structure<img width="950" height="421" alt="image" src="https://github.com/user-attachments/assets/f861a4c8-b218-4cab-bce4-aabfeaa09cb4" />
+## Repository Structure
 nifty50-var-modeling/
 │
-├── data/ # raw and processed datasets
-├── notebooks/ # exploratory analysis, model development, validation
-├── src/ # model implementations and backtesting logic
-├── results/ # figures, tables, outputs
+├── data/          # raw and processed datasets
+├── notebooks/     # exploratory analysis, model development, validation
+├── src/           # model implementations and backtesting logic
+├── results/       # figures, tables, outputs
 ├── README.md
 └── requirements.txt
 

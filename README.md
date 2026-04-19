@@ -31,7 +31,7 @@ To estimate and compare one-day 99% VaR for the NIFTY 50 using multiple establis
 ## Empirical Analysis
 - Data cleaning and logarithmic return construction  
 - Exploratory analysis of return dynamics  
-- Descriptive statistical analysis  
+- Descriptive statistics  
 - Skewness and kurtosis diagnostics  
 - D’Agostino–Pearson normality testing  
 - Model-specific VaR estimation  
@@ -52,7 +52,7 @@ A model is considered statistically well-calibrated if the observed exception fr
 - Historical Simulation demonstrates the most consistent empirical calibration among the models evaluated  
 
 ## Interpretation
-The results indicate that accurate risk estimation is critically dependent on distributional specification. Under non-normal, fat-tailed, and heteroskedastic return dynamics, empirically driven approaches provide more reliable VaR estimates than Gaussian-based parametric models.
+The results indicate that risk estimation is highly sensitive to distributional assumptions. Under non-normal, fat-tailed, and heteroskedastic return dynamics, empirically driven approaches provide more reliable VaR estimates than Gaussian-based parametric models.  
 
 ## Repository Structure
 ```
@@ -78,7 +78,7 @@ nifty50-var-modeling/
 
 ## Scope
 - NIFTY 50 index-level market risk  
-- Daily frequency data  
+- Daily frequency  
 - One-day VaR estimation  
 - Rolling-window model comparison  
 

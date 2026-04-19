@@ -1,0 +1,6 @@
+Model,Exceptions,Expected Exceptions,Exception Rate (%),Kupiec LR,Kupiec p-value,Kupiec Verdict,Z-Test statistic,Z-Test p-value,Z-Test Verdict
+Historical,16,19.52,0.82,0.6832,0.40849,Accept,-0.8007,0.42329,Accept
+VCV,29,19.52,1.486,4.0462,0.04427,Reject,2.1565,0.03104,Reject
+GARCH,31,19.52,1.588,5.7863,0.01615,Reject,2.6115,0.00902,Reject
+Monte Carlo,33,19.52,1.691,7.7887,0.00526,Reject,3.0664,0.00217,Reject
+EWMA,37,19.52,1.895,12.52,0.0004,Reject,3.9763,7e-05,Reject

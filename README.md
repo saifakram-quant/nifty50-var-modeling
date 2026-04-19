@@ -64,7 +64,6 @@ nifty50-var-modeling/
 ├── README.md
 └── requirements.txt
 
-
 ## Technology Stack
 - Python  
 - pandas  

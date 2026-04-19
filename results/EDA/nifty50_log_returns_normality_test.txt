@@ -1,0 +1,5 @@
+🧪 Normality Test (D’Agostino & Pearson) – NIFTY 50 Log Returns
+------------------------------------------------------------
+Test Statistic: 1078.9308
+p-value: 0.0000
+❌ The null hypothesis of normality is REJECTED (p ≤ 0.05). Returns are NOT normally distributed.

@@ -1,0 +1,4 @@
+🔀 Skewness and Kurtosis of NIFTY 50 Daily Log Returns (2014–2023)
+------------------------------------------------------------
+Skewness: -1.3762  --> Negative skew
+Kurtosis: 23.4782  --> Leptokurtic (Fat-tailed)

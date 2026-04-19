@@ -94,6 +94,16 @@ The EDA folder contains only derived outputs (plots and summaries), while all ex
 - matplotlib  
 - Jupyter Notebook  
 
+## Requirements
+
+The project is implemented in Python and relies on the dependencies listed in `requirements.txt`.
+
+To install all required packages, run:
+
+```bash
+pip install -r requirements.txt
+```
+
 ## Scope
 - NIFTY 50 index-level market risk  
 - Daily frequency  
